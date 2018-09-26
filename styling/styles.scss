@@ -1,0 +1,69 @@
+/*MAINPAGE STYLES*/
+/*SASS COLORS*/
+$main-white: #e9ebee;
+$pale-blue:#1176b6;
+$pale-gray:#6d6d6d;
+$tur-blue:#099efc;
+$trans-white: rgba(255,255,255,.8);
+/*GENERAL*/
+body{
+    background-color: $main-white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+a{color:$pale-blue;}
+a:hover{text-decoration: underline;}
+/*HEADER*/
+header{
+    background-color: $pale-blue;
+    padding: 10px 0;
+}
+//Logo
+header #logo img{
+    height: 22px;
+}
+//search
+header #searchbar form input[type="text"]{
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 3px 0 0 3px;
+    color: $pale-gray;
+}
+header #searchbar form button{
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+header #searchbar form button:hover{
+    background-color: $tur-blue;
+    color: #fff;
+}
+//Menu
+header #menu{
+    padding: 0;
+}
+header #menu a{
+    color: $trans-white;
+}
+header #menu a:hover{
+    color:#fff;
+}
+header #menu #pph{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+header #menu #pph img{
+    border-radius: 100px;
+}

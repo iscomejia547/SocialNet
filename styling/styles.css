@@ -1,0 +1,79 @@
+/*MAINPAGE STYLES*/
+/*SASS COLORS*/
+/*GENERAL*/
+body {
+  background-color: #e9ebee;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #1176b6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*HEADER*/
+header {
+  background-color: #1176b6;
+  padding: 10px 0;
+}
+
+header #logo img {
+  height: 22px;
+}
+
+header #searchbar form input[type=text] {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  font-size: 12px;
+  padding: 0 10px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 3px 0 0 3px;
+  color: #6d6d6d;
+}
+
+header #searchbar form button {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  font-size: 12px;
+  padding: 0 10px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+header #searchbar form button:hover {
+  background-color: #099efc;
+  color: #fff;
+}
+
+header #menu {
+  padding: 0;
+}
+
+header #menu a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+header #menu a:hover {
+  color: #fff;
+}
+
+header #menu #pph {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+
+header #menu #pph img {
+  border-radius: 100px;
+}
+
+/*# sourceMappingURL=styles.css.map */

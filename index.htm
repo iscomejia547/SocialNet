@@ -7,9 +7,41 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styling/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styling/styles.css">
+    <script src="scripts/menu.js"></script>
     <title>SocialNet</title>
 </head>
 <body>
-    
+    <header>
+        <section class="container">
+            <div class="row">
+                <article class="col-auto d-none d-md-block" id="logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="SocialNet">
+                    </a>
+                </article>
+                <article class="col" id="searchbar">
+                    <form action="">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-10 colum">
+                                <input type="text" name="searchtxt" id="searchtxt" placeholder="Amigos, lugares y cosas...">
+                            </div>
+                            <div class="col-2 colum">
+                                <button type="submit"><i class="icon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <nav class="col col-lg-2" id="menu">
+                    <a href="#"><i class="icon-users"></i></a>
+                    <a href="#"><i class="icon-bell-alt"></i></a>
+                    <a href="#"><i class="icon-chat"></i></a>
+                    <a href="#" id="pph"><img src="img/persona2.jpg" width="22" height="22"></a>
+                </nav>
+            </div>
+        </section>
+    </header>
 </body>
 </html>
