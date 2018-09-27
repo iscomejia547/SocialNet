@@ -76,4 +76,100 @@ header #menu #pph img {
   border-radius: 100px;
 }
 
+/*MAIN*/
+main {
+  padding-top: 20px;
+}
+
+main #sidebar {
+  padding-bottom: 10px;
+  padding-left: 0;
+}
+
+main #sidebar nav {
+  border-bottom: 1px solid #c7c8ca;
+  padding-bottom: 20px;
+}
+
+main #sidebar nav a {
+  display: block;
+  padding: 3px;
+  font-family: "Roboto", sans-serif;
+  color: #3d3c3c;
+}
+
+main #sidebar nav a:hover {
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+main #sidebar nav a i {
+  margin-right: 10px;
+}
+
+/*main-col*/
+main #main-col #publication {
+  margin-bottom: 20;
+}
+
+main #main-col #publication .photo {
+  padding-left: 15px;
+}
+
+main #main-col #publication .photo img {
+  width: 100%;
+}
+
+main #main-col #publication .photo a {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-top: 20px;
+}
+
+main #main-col #publication form textarea {
+  width: 100%;
+  max-width: 100;
+  min-height: 100px;
+  max-height: 300px;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #565656;
+  box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.35);
+}
+
+main #main-col #publication #btn-container {
+  padding: 20px 0;
+  border-bottom: 1px solid #c7c8ca;
+}
+
+main #main-col #publication #btn-container a {
+  color: #8d8d8d;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+main #main-col #publication #btn-container a:hover {
+  color: #3d3c3c;
+}
+
+main #main-col #publication #btn-container button {
+  border: 1px solid #00609c;
+  padding: 5px 30px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to bottom, #1a87cd 0%, #1176b6 100%);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+main #main-col #publication #btn-container button:hover {
+  background: linear-gradient(to bottom, #1176b6 0%, #1a87cd 100%);
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -5,6 +5,15 @@ $pale-blue:#1176b6;
 $pale-gray:#6d6d6d;
 $tur-blue:#099efc;
 $trans-white: rgba(255,255,255,.8);
+$border-gray: #c7c8ca;
+$link-gray:#3d3c3c;
+$shadow-white:#f2f2f2;
+$shadow-gray:#565656;
+$trans-black: rgba(0,0,0,.35);
+$bleach-gray:#8d8d8d;
+$button-blue: #00609c;
+$button-gradientn:linear-gradient(to bottom, #1a87cd 0%, #1176b6 100%);
+$button-gradienth:linear-gradient(to bottom, #1176b6 0%, #1a87cd 100%);
 /*GENERAL*/
 body{
     background-color: $main-white;
@@ -66,4 +75,86 @@ header #menu #pph{
 }
 header #menu #pph img{
     border-radius: 100px;
+}
+/*MAIN*/
+main{
+    padding-top: 20px;
+}
+//sidebar
+main #sidebar{
+    padding-bottom: 10px;
+    padding-left: 0;
+}
+main #sidebar nav{
+    border-bottom: 1px solid $border-gray;
+    padding-bottom: 20px;
+}
+main #sidebar nav a{
+    display: block;
+    padding: 3px;
+    font-family: 'Roboto', sans-serif;
+    color: $link-gray;
+}
+main #sidebar nav a:hover{
+    background-color: $shadow-white;
+    text-decoration:none;
+}
+main #sidebar nav a i{
+    margin-right: 10px;
+}
+/*main-col*/
+//publication
+main #main-col #publication{
+    margin-bottom: 20;
+}
+main #main-col #publication .photo{
+    padding-left: 15px;
+}
+main #main-col #publication .photo img{
+    width: 100%;
+}
+main #main-col #publication .photo a{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+main #main-col #publication form textarea{
+    width: 100%;
+    max-width: 100;
+    min-height: 100px;
+    max-height:300px ;
+    padding: 15px;
+    border:none;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color:$shadow-gray;
+    box-shadow: 0px 2px 2px 0 $trans-black;
+}
+main #main-col #publication #btn-container{
+    padding: 20px 0;
+    border-bottom: 1px solid $border-gray;
+}
+main #main-col #publication  #btn-container a{
+    color: $bleach-gray;
+    font-size: 20px;
+    margin-right: 10px;
+}
+main #main-col #publication #btn-container a:hover{
+    color:$link-gray;
+}
+main #main-col #publication #btn-container button{
+    border: 1px solid $button-blue;
+    padding: 5px 30px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background: $button-gradientn;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+main #main-col #publication #btn-container button:hover{
+    background: $button-gradienth;
 }
