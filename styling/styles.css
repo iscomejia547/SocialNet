@@ -320,4 +320,72 @@ main footer #copyright {
   margin-top: 10px;
 }
 
+/*MQ's*/
+@media screen and (max-width: 767px) {
+  main #menu-btn {
+    display: block;
+    border: 1px solid #00609c;
+    padding: 5px 10px;
+    background: linear-gradient(to bottom, #1a87cd 0%, #1176b6 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  main #menu-btn:hover {
+    background: linear-gradient(to bottom, #1176b6 0%, #1a87cd 100%);
+  }
+
+  main #dialog-back {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none;
+  }
+
+  main #dialog-back.active {
+    display: block;
+  }
+
+  main #sidebar {
+    width: 85%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 100vh;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    overflow: scroll;
+  }
+
+  main #sidebar.active {
+    transform: translateX(0%);
+  }
+
+  main #sidebar nav {
+    border: none;
+  }
+
+  main #sidebar nav a {
+    padding: 20px;
+    color: #fff;
+  }
+
+  main #sidebar nav a:hover {
+    color: #3d3c3c;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

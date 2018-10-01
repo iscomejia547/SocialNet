@@ -10,6 +10,8 @@ $link-gray:#3d3c3c;
 $shadow-white:#f2f2f2;
 $shadow-gray:#565656;
 $trans-black: rgba(0,0,0,.35);
+$trans-black85: rgba(0,0,0,.85);
+$trans-black50: rgba(0,0,0,.5);
 $bleach-gray:#8d8d8d;
 $button-blue: #00609c;
 $button-gradientn:linear-gradient(to bottom, #1a87cd 0%, #1176b6 100%);
@@ -287,4 +289,64 @@ main footer a{
 main footer #copyright{
     color: $muted-gray;
     margin-top: 10px;
+}
+
+/*MQ's*/
+@media screen and (max-width: 767px){
+    main #menu-btn{
+        display: block;
+        border: 1px solid $button-blue;
+        padding: 5px 10px;
+        background: $button-gradientn;
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    main #menu-btn:hover{
+        background: $button-gradienth;
+    }
+    main #dialog-back{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        background: $trans-black50;
+        z-index: 99;
+        display: none;
+    }
+    main #dialog-back.active{
+        display: block;
+    }
+    main #sidebar{
+        width: 85%;
+        position: fixed;
+        background-color: $trans-black85;
+        height: 100vh;
+        z-index: 100;
+        top:0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        transform: translateX(-100%);
+        transition: all .3s ease;
+        overflow: scroll;
+    }
+    main #sidebar.active{
+        transform: translateX(0%);
+    }
+    main #sidebar nav{
+        border: none;
+    }
+    main #sidebar nav a {
+        padding: 20px;
+        color: #fff;
+    }
+    main #sidebar nav a:hover {
+        color: $link-gray;
+    }
 }
