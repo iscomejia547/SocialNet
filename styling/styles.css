@@ -368,6 +368,7 @@ main footer #copyright {
     transform: translateX(-100%);
     transition: all 0.3s ease;
     overflow: scroll;
+    margin-top: 20px;
   }
 
   main #sidebar.active {
@@ -385,6 +386,28 @@ main footer #copyright {
 
   main #sidebar nav a:hover {
     color: #3d3c3c;
+  }
+}
+@media screen and (max-width: 575px) {
+  header #menu {
+    padding: 0 15px 15px 15px;
+  }
+
+  main #main-col #publication .photo a {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+
+  main #main-col .feed .photo a {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 300px) {
+  main #main-col #publication .photo a {
+    display: none;
   }
 }
 
