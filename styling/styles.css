@@ -285,4 +285,39 @@ main .feed .comment .like {
   font-size: 14px;
 }
 
+main #rightbar h3 {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+main #rightbar #ads {
+  margin-bottom: 20px;
+}
+
+main #rightbar #ads a {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+main #rightbar #ads a img {
+  width: 100%;
+}
+
+main footer {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+main footer a {
+  color: #1176b6;
+  line-height: 14px;
+  margin-right: 10px;
+}
+
+main footer #copyright {
+  color: #919191;
+  margin-top: 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */

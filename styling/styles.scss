@@ -16,6 +16,7 @@ $button-gradientn:linear-gradient(to bottom, #1a87cd 0%, #1176b6 100%);
 $button-gradienth:linear-gradient(to bottom, #1176b6 0%, #1a87cd 100%);
 $pale-blueh:#0d659d;
 $cb-gray: #cbcbcb;
+$muted-gray: #919191;
 /*GENERAL*/
 body{
     background-color: $main-white;
@@ -256,4 +257,34 @@ main .feed .comment .ans{
 main .feed .comment .like{
     margin-bottom: 10px;
     font-size: 14px;
+}
+//rightbar
+main #rightbar h3{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+main #rightbar #ads{
+    margin-bottom: 20px;
+}
+main #rightbar #ads a{
+    margin-bottom: 15px;
+    display: inline-block;
+}
+main #rightbar #ads a img{
+    width: 100%;
+}
+//footer
+main footer{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+main footer a{
+    color: $pale-blue;
+    line-height: 14px;
+    margin-right: 10px;
+}
+main footer #copyright{
+    color: $muted-gray;
+    margin-top: 10px;
 }
